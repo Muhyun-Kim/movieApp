@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Info from "../components/Info";
 
 function Detail() {
+  const [loading, setLoading] = useState(true);
   const [moviesInfo, setMoviesInfo] = useState();
   const { id } = useParams();
   const getMovie = async () => {
@@ -11,12 +12,14 @@ function Detail() {
     ).json();
     console.log(json);
     setMoviesInfo(json.data.movie);
+    setLoading(false);
   };
   useEffect(() => {
     getMovie();
   }, []);
   return (
     <div>
+      {loading ? <h1>Loading...</h1> : <Info title={moviesInfo.title} />}
     </div>
   );
 }
