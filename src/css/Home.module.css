@@ -15,5 +15,10 @@
 }
 
 .pageName {
-    text-align: center;
+  text-align: center;
+}
+.movies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px 75px;
 }
