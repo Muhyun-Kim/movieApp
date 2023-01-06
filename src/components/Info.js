@@ -1,11 +1,12 @@
 function Info({ title, img, download_count, language, description_full }) {
   return (
-    <div className="Info">
+    <div>
       <h1>{title}</h1>
-      <h1>img</h1>
-      <h1>downloadcount</h1>
-      <h1>language</h1>
-      <h1>description full</h1>
+      <img src={img} />
+      <p>ダウンロード数：{download_count}</p>
+      <p>言語：{language}</p>
+      <p>粗筋</p>
+      <p>{description_full}</p>
     </div>
   );
 }

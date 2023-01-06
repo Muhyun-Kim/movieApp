@@ -19,7 +19,17 @@ function Detail() {
   }, []);
   return (
     <div>
-      {loading ? <h1>Loading...</h1> : <Info title={moviesInfo.title} />}
+      {loading ? (
+        <h1>Loading...</h1>
+      ) : (
+        <Info 
+        title={moviesInfo.title} 
+        img={moviesInfo.medium_cover_image} 
+        download_count={moviesInfo.download_count}
+        language={moviesInfo.language}
+        description_full={moviesInfo.description_full}
+        />
+      )}
     </div>
   );
 }

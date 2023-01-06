@@ -1,0 +1,19 @@
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loading {
+  width: 100%;
+  height: 100vh;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-weight: 1000;
+  font-size: x-large;
+}
+
+.pageName {
+    text-align: center;
+}
