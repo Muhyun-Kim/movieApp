@@ -15,8 +15,11 @@
 }
 
 .pageName {
+  padding: 20px;
+  font-style: italic;
   text-align: center;
 }
+
 .movies {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
