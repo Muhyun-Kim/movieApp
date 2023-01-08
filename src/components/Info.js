@@ -1,6 +1,8 @@
+import styles from "../css/Info.module.css"
+
 function Info({ title, img, download_count, language, description_full }) {
   return (
-    <div>
+    <div className={styles.movie_info}>
       <h1>{title}</h1>
       <img src={img} />
       <p>ダウンロード数：{download_count}</p>
