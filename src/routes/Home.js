@@ -29,7 +29,7 @@ function Home() {
         ) : (
           <div className={styles.all}>
             <div className={styles.pageName}>
-              <h1>Best Movie TOP20</h1>
+              <h1>🎥 Best Movie TOP20🎥</h1>
             </div>
             <div  className={styles.movies}>
             {movies.map((movie) => (

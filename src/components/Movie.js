@@ -12,7 +12,7 @@ function Movie({ id, coverImg, title, summary, genres }) {
         </Link>
       </div>
       <h2 className={styles.movies_movie_title}>{title}</h2>
-      <p>{summary}</p>
+      <p className={styles.movies_movie_summary}>{summary}</p>
       <ul>
         {genres.map((g) => (
           <li key={g}>{g}</li>

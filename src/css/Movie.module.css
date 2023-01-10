@@ -1,9 +1,28 @@
 .movies_movie {
-    padding: 20px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 10px 5px 30px gainsboro;
+  position: relative;
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.movies_movie:hover {
+  transform: translateY(-20px);
 }
 
 .movies_movie_title {
-    padding: 18px 0px 8px 0px;
-    font-size: 24px;
-    margin: 0px;
+  padding: 18px 0px 8px 0px;
+  font-size: 24px;
+  margin: 0px;
+}
+
+.movies_movie_summary {
+  padding-right: 10px;
+}
+
+@media (max-width: 600px) {
+    .movies_movie_summary {
+        display: none;
+    }
 }
